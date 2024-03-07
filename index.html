@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <nav>
+        <h1 id="logo"></h1>
+    </nav>
+    <main>
+        <div id="todoBar">
+            <div class="todo-app">
+                <h2 id="todo-day-header">Today</h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Enter text">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <div id="list-container-wrapper">
+                    <ul id="list-container">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="calendar">
+            <div id="date-header">
+                <h2 class="fa fa-chevron-left" id="prev"></h2>
+                <h2 id="current-date"></h2>
+                <h2 class="fa fa-chevron-right" id="next"></h2>
+            </div>
+            <div id="calendar-app">
+                <div id="days">
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tue</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thu</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="calendar.js"></script>
+    <script src="todo.js"></script>
+</body>
+
+</html>
